@@ -9,6 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- <title>{{ config('app.name', 'Laravel') }}</title> -->
+    <link rel="shortcut icon" href="{{ url('assets/images/logo.png') }}">
     <title>Halaman Login</title>
 
     <!-- Styles -->

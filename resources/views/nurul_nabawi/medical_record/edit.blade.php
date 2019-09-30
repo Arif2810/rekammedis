@@ -1,7 +1,19 @@
-@extends('templates.main')
-@section('title', 'Edit Rekam Medis')
+<!DOCTYPE html>
+<html>
+<head>
+	@include('templates.head')
+	<title>Edit Rekam Medis</title>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
 
-@section('content')
+	  	<header class="main-header">
+	  		@include('templates.header')
+	  	</header>
+		<!-- Left side column. contains the logo and sidebar -->
+		<aside class="main-sidebar">
+			@include('templates.sidebar')
+		</aside>
 
   		<!-- Content Wrapper. Contains page content -->
 	  	<div class="content-wrapper">
@@ -88,5 +100,16 @@
 			</section>
 		</div>
 		<!-- /.content-wrapper -->
-		
-@endsection
+
+		<footer class="main-footer">
+    		@include('templates.footer')
+  		</footer>
+
+		<!-- Control Sidebar -->
+		<aside class="control-sidebar control-sidebar-dark">
+			@include('templates.control_sidebar')
+		</aside>
+	</div>
+@include('templates.scripts')
+</body>
+</html>
